@@ -1,0 +1,23 @@
+def calculateLength(n):    
+    length = 0;    
+    while(n != 0):    
+        length = length + 1;       # user defined function for calculating length
+        n = n//10;    
+    return length;    
+     
+num = int(input())    
+rem = sum = 0;    
+len = calculateLength(num);    
+     
+n = num;      # copy the real number to a variable
+     
+while(num > 0):    
+    rem = num % 10;    
+    sum = sum + int(rem**len);   # calculating the sum to check for disarium or not
+    num = num//10;    
+    len = len - 1;    
+     
+if(sum == n):    
+    print("True");   # use str() function to convert integer to string
+else:    
+    print("False")  
