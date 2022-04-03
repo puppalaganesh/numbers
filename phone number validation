@@ -1,0 +1,6 @@
+s=input()
+l=len(s)
+if(s[0]=="0" or l!=10):
+    print("Invalid")
+else:
+    print("Valid")
