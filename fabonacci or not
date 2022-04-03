@@ -1,0 +1,13 @@
+import math
+def s(x):
+    s=int(math.sqrt(x))
+    return s*s==x
+n=int(input())
+r1=5*(n*n)+4
+r2=5*(n*n)-4
+if s(r1) or s(r2):
+    print("True")
+else:
+    print("False")
+
+
