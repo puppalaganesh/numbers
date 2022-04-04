@@ -1,0 +1,19 @@
+t=int(input())
+for i in range(t):
+    number=int(input())
+    arr=list(map(int,input().split()))
+    odd=0
+    total=0
+    for num in arr:
+        if num%2!=0:
+            odd+=1
+        total+=num
+    if number==1:
+        print(0)
+    elif number==2 and odd==1:
+        print(0)
+    elif total%2==0:
+        print(odd//2)
+    elif total%2!=0:
+        print((odd-1)//2)
+        
