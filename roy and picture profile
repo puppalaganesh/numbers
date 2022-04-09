@@ -1,0 +1,16 @@
+L=int(input())
+N=int(input())
+for x in range(N):
+    number=input().split()
+    H=int(number[0])
+    W=int(number[1])
+    if (H==L and W==L):
+        print("ACCEPTED")
+    elif H<L or W<L:
+        print("UPLOAD ANOTHER")
+    elif H==W:
+        print("ACCEPTED")
+    else:
+        print("CROP IT")
+        
+        
