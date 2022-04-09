@@ -1,0 +1,17 @@
+a=list(map(int,input().split()))
+h=a[0]>50
+s=a[1]>60
+sf=a[2]>100
+if h and s and sf:
+    print("10")
+elif h and s:
+    print("9")
+elif s and sf:
+    print("8")
+elif h and sf:
+    print("7")
+elif h or s or sf:
+    print("6")
+else:
+    print("5")
+    
