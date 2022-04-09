@@ -1,0 +1,11 @@
+n=int(input())
+s=str(n)
+if n>0:
+    s1=s[::-1]
+    print(int(s1))
+else:
+    s1=s[:0:-1]
+    a=int(s1)
+    a1=(-(a))
+    print(a1)
+    
