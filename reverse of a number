@@ -1,0 +1,6 @@
+def rev(n):
+    st=str(n)
+    refv=st[::-1]
+    return refv
+n=int(input())
+print(rev(n))
