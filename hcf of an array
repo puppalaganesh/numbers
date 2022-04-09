@@ -1,0 +1,12 @@
+n=int(input())
+l=list(map(int,input().split(" ")))
+m=min(l)+1
+factors=[1]
+for i in range(2,m):
+    c=0
+    for t in l:
+        if t%i==0:
+            c=c+1
+    if c==n:
+        factors.append(i)
+print(max(factors))
