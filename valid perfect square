@@ -1,0 +1,11 @@
+n=int(input())
+for i in range(n):
+    cnt=0
+    b=int(input())
+    for i in range(i,b):
+        if(i*i==b):
+            cnt=cnt+1
+    if cnt==1:
+        print("True")
+    else:
+        print("False")
