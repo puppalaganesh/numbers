@@ -1,0 +1,16 @@
+import math
+def isprime1(n):
+    if(n==0 or n==1):
+     return 0
+    else:
+         sq=int(math.sqrt(n))
+         for i in  range(2,sq+1):
+             if n%i==0:
+                 return 0
+         return 1
+a=int(input())
+b=int(input())
+c=0
+for i in range(a,b+1):
+    c+=isprime1(i)
+print(c)
