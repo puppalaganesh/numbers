@@ -1,0 +1,7 @@
+n=int(input())
+a=[int(x) for x in str(n)]
+b={int(x) for x in str(n)}
+if len(a)==len(b):
+    print("Unique Number")
+else:
+    print("Not Unique Number")
