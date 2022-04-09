@@ -1,0 +1,15 @@
+n=int(input())
+a=input()
+b=a.split()
+f=[]
+for k in b:
+    f.append(int(k))
+c=min(f)
+for i in range(c,0,-1):
+    cnt=0
+    for j in f:
+        if(j%i)==0:
+            cnt=cnt+1
+    if cnt==n:
+        break
+print(i)
