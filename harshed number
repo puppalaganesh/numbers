@@ -1,0 +1,10 @@
+n=int(input())
+copy=n
+digit_sum=0
+while n:
+    digit_sum+=n%10
+    n//=10
+if copy%digit_sum==0:
+    print("True")
+else:
+    print("False")
